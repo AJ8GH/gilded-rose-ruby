@@ -1,6 +1,7 @@
 class GildedRose
   MINIMUM_QUALITY = 0
   MAXIMUM_QUALITY = 50
+  SELL_IN_REDUCTION = 1
   NORMAL_QUALITY_CHANGE = 1
   BACKSTAGE_DOUBLE_QUALITY = 10
   BACKSTAGE_TRIPLE_QUALITY = 5
@@ -23,7 +24,7 @@ class GildedRose
         item.quality += NORMAL_QUALITY_CHANGE if item.sell_in <= BACKSTAGE_TRIPLE_QUALITY && item.quality < MAXIMUM_QUALITY
       end
 
-      item.sell_in -= NORMAL_QUALITY_CHANGE if item.name != 'Sulfuras, Hand of Ragnaros'
+      item.sell_in -= SELL_IN_REDUCTION if item.name != 'Sulfuras, Hand of Ragnaros'
 
       if item.sell_in < SELL_BY_DATE
         if item.name == 'Aged Brie'
