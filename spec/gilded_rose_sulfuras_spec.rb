@@ -8,6 +8,11 @@ describe GildedRose do
           GildedRose.new(items).update_quality
         }.to change { items[0].sell_in }.by(0)
       end
+
+      it 'does not change quality value' do
+        GildedRose.new(items).update_quality
+        expect(items[0].quality).to be(80)
+      end
     end
 
     #   context 'when sell_in > 0' do
@@ -32,5 +37,6 @@ describe GildedRose do
     #     expect(items0[0].quality).to be(50)
     #   end
     # end
+
   end
 end
