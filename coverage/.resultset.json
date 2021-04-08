@@ -162,6 +162,45 @@
         null,
         null
       ],
+      "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/spec/gilded_rose_sulfuras_spec.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/spec/item_spec.rb": [
         1,
         5,
@@ -192,7 +231,7 @@
         null
       ]
     },
-    "timestamp": 1617893763
+    "timestamp": 1617894185
   },
   "Unknown Test Framework": {
     "coverage": {
