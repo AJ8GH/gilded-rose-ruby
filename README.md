@@ -21,7 +21,6 @@ Constraints
 - item.quality never < 0
 - item.quality never > 50 unless item == Sulfuras
 - sulfuras.quality always == 80
-- sulfuras.sell_in always == nil
 
 Each Day
 --------
