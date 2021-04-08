@@ -54,12 +54,20 @@ describe GildedRose do
       end
 
       context 'when sell in value is zero' do
-        let(:items5) { [Item.new(name, 0, 50)] }
-
         it 'reduces quality to zero' do
+          items5 = [Item.new(name, 0, 50)]
           GildedRose.new(items5).update_quality
           expect(items5[0].quality).to be_zero
         end
+      end
+
+      it 'stops increasing when quality hits 50' do
+        items5 = [Item.new(name, 4, 49)]
+        GildedRose.new(items5).update_quality
+        expect(items5[0].quality).to be(50)
+
+        GildedRose.new(items5).update_quality
+        expect(items5[0].quality).to be(50)
       end
     end
   end
