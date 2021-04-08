@@ -25,6 +25,12 @@ describe GildedRose do
           }.to change { items1[0].quality }.by(2)
         end
       end
+
+      it 'does not increase quality past 50' do
+        gilded_rose = GildedRose.new(items0)
+        100.times { gilded_rose.update_quality }
+        expect(items0[0].quality).to be(50)
+      end
     end
   end
 end
