@@ -36,3 +36,39 @@ for you).
 
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a
 legendary item and as such its Quality is 80 and it never alters.
+
+Items
+-----
+
+- Regular item
+- Aged Brie
+- Backstage passes to a TAFKAL80ETC concert
+- Sulfuras, Hand of Ragnaros
+- Conjured items
+
+Constraints
+-----------
+
+- item.quality never < 0
+- item.quality never > 50 unless item == Sulfuras
+- sulfuras.quality always == 80
+- sulfuras.sell_in always == nil
+
+Each Day
+--------
+
+sell in:
+- item.sell_in -= 1 unless item == Sulfuras
+
+quality:
+- regular item:
+- quality -= 2 if sell_in < 0 (unless quality <= 0)
+- quality -= 1 if sell_in >= 0 (unless quality <= 0)
+
+- brie:
+  - quality += 1 (unless quality >= 50)
+
+- backstage pass:
+  - quality = 0 when sell_in < 0
+  - quality += 3 if sell_in <=5 (unless quality >= 50)
+  - quality += 2 if sell_in <=10 (unless quality >= 50)
