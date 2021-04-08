@@ -9,6 +9,14 @@ describe GildedRose do
           GildedRose.new(items).update_quality
         }.to change { items[0].sell_in }.by(-1)
       end
+
+      context 'when sell in value > 10' do
+        it 'increase quality by 1' do
+          expect {
+            GildedRose.new(items).update_quality
+          }.to change { items[0].quality }.by(1)
+        end
+      end
     end
   end
 end
