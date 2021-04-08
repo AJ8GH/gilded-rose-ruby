@@ -1,8 +1,4 @@
 # frozen_string_literal: true
-require 'coveralls'
-Coveralls.wear!
-
-# SimpleCov.command_name 'Unit Tests'
 
 source 'https://rubygems.org'
 
