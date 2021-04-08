@@ -12,4 +12,10 @@ describe Item do
       expect(item.sell_in).to be_zero
     end
   end
+
+  describe '#quality' do
+    it 'returns the quality value' do
+      expect(item.quality).to be_zero
+    end
+  end
 end
