@@ -1,9 +1,9 @@
 describe Item do
-  subject(:item) { described_class.new(:name, 0, 0) }
+  subject(:item) { described_class.new(:item, 0, 0) }
 
   describe '#name' do
     it 'returns the name' do
-      expect(item.name).to be(:name)
+      expect(item.name).to be(:item)
     end
   end
 
@@ -16,6 +16,12 @@ describe Item do
   describe '#quality' do
     it 'returns the quality value' do
       expect(item.quality).to be_zero
+    end
+  end
+
+  describe '#to_s' do
+    it 'returns item attributes as a string' do
+      expect(item.to_s).to eq('item, 0, 0')
     end
   end
 end
