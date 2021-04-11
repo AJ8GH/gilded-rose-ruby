@@ -4,6 +4,5 @@ class Sulfuras < Item
   end
 
   def update_quality
-
   end
 end

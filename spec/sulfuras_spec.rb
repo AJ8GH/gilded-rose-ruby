@@ -6,5 +6,10 @@ describe Sulfuras do
       sulfuras.update_quality
       expect(sulfuras.sell_in).to be_zero
     end
+
+    it 'does not change the quality' do
+      sulfuras.update_quality
+      expect(sulfuras.quality).to be(80)
+    end
   end
 end

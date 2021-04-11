@@ -2,7 +2,7 @@ describe GildedRose do
   describe '#update_quality' do
     name = 'Backstage passes to a TAFKAL80ETC concert'
 
-    describe 'backstage pass' do
+    describe 'backstage passes' do
       let(:items0) { [Item.new(name, 11, 1)] }
 
       it 'reduces sell in value' do
