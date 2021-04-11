@@ -6,9 +6,9 @@
         1,
         null,
         1,
-        63,
-        63,
-        63,
+        64,
+        64,
+        64,
         null,
         null,
         1,
@@ -125,7 +125,8 @@
       "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/lib/normal.rb": [
         1,
         1,
-        1,
+        2,
+        2,
         null,
         null
       ],
@@ -548,13 +549,16 @@
       ],
       "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/spec/normal_spec.rb": [
         1,
-        2,
+        3,
         null,
         1,
         1,
+        4,
+        null,
+        null,
         1,
         1,
-        2,
+        4,
         null,
         null,
         null
@@ -577,7 +581,7 @@
         null
       ]
     },
-    "timestamp": 1618167899
+    "timestamp": 1618168390
   },
   "Unknown Test Framework": {
     "coverage": {
