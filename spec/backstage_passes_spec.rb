@@ -35,5 +35,14 @@ describe BackstagePasses do
         }.to change { backstage_passes.quality }.by(3)
       end
     end
+
+    context 'when sell in value is zero' do
+      subject(:backstage_passes) { described_class.new(0, 1) }
+
+      it 'reduces quality to zero' do
+        backstage_passes.update_quality
+        expect(backstage_passes.quality).to be_zero
+      end
+    end
   end
 end
