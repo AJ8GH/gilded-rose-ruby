@@ -6,9 +6,9 @@
         1,
         null,
         1,
-        50,
-        50,
-        50,
+        51,
+        51,
+        51,
         null,
         null,
         1,
@@ -72,6 +72,29 @@
         null,
         1,
         285,
+        null,
+        null
+      ],
+      "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/lib/aged_brie.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/spec/aged_brie_spec.rb": [
+        1,
+        2,
+        null,
+        1,
+        1,
+        4,
+        null,
         null,
         null
       ],
@@ -399,7 +422,7 @@
         null
       ]
     },
-    "timestamp": 1617906540
+    "timestamp": 1618160541
   },
   "Unknown Test Framework": {
     "coverage": {
