@@ -1,4 +1,4 @@
-describe GildedRose do
+xdescribe GildedRose do
   describe '#update_quality' do
     let(:items0) { [Item.new('foo', 0, 0)] }
     let(:items1) { [Item.new('foo', 1, 1)] }

@@ -1,4 +1,4 @@
-describe GildedRose do
+xdescribe GildedRose do
   describe '#update_quality' do
     name = 'Backstage passes to a TAFKAL80ETC concert'
 

@@ -73,7 +73,7 @@ output4 = [
   "\n"
 ].join("\n")
 
-describe 'feature tests' do
+xdescribe 'feature tests' do
   it 'prints correct output after 1 day' do
     expect { print_output(1) }.to output(output0).to_stdout
   end
