@@ -2,7 +2,6 @@ class AgedBrie < Item
   MAXIMUM_QUALITY = 50
 
   def initialize(name = 'Aged Brie', sell_in, quality)
-    @name = name
     super
   end
 
