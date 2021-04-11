@@ -15,5 +15,15 @@ describe BackstagePasses do
         }.to change { backstage_passes.quality }.by(1)
       end
     end
+
+    context 'when sell in value is between 10 and 5' do
+      subject(:backstage_passes) { described_class.new(10, 1) }
+
+      it 'increases quality by 2' do
+        expect {
+          backstage_passes.update_quality
+        }.to change { backstage_passes.quality }.by(2)
+      end
+    end
   end
 end
