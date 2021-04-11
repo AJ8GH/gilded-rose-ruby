@@ -6,6 +6,6 @@ class AgedBrie < Item
 
   def update_quality
     self.sell_in -= 1
-    self.quality += 1
+    sell_in > 0 ? self.quality += 1 : self.quality += 2
   end
 end
