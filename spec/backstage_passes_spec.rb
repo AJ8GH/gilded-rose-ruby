@@ -7,5 +7,13 @@ describe BackstagePasses do
         backstage_passes.update_quality
       }.to change { backstage_passes.sell_in }.by(-1)
     end
+
+    context 'when sell in value > 10' do
+      it 'increases quality by 1' do
+        expect {
+          backstage_passes.update_quality
+        }.to change { backstage_passes.quality }.by(1)
+      end
+    end
   end
 end

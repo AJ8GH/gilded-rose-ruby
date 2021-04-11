@@ -6,9 +6,9 @@
         1,
         null,
         1,
-        57,
-        57,
-        57,
+        58,
+        58,
+        58,
         null,
         null,
         1,
@@ -105,11 +105,12 @@
       "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/lib/backstage_passes.rb": [
         1,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        1,
+        2,
+        2,
         null,
         null
       ],
@@ -149,13 +150,21 @@
       ],
       "/Users/adamjonas/Projects/makers/week-10/gilded-rose-ruby/spec/backstage_passes_spec.rb": [
         1,
-        2,
+        3,
         null,
         1,
         1,
         1,
         1,
         2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        2,
+        null,
         null,
         null,
         null
@@ -501,7 +510,7 @@
         null
       ]
     },
-    "timestamp": 1618165110
+    "timestamp": 1618165224
   },
   "Unknown Test Framework": {
     "coverage": {
